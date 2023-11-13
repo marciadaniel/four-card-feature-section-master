@@ -1,0 +1,134 @@
+
+
+
+@font-face {
+    font-family: Poppins;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+}
+
+:root {
+    
+    --text-color: hsl(229, 6%, 66%);
+    --main-color:   hsl(234, 12%, 34%);
+    --main-bg-color:hsl(0, 0%, 98%);
+}
+
+body {
+    margin: 0 ;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: grey;
+    
+   
+}
+
+.container {
+    margin: 20px auto;
+    width: 1200px;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    color: var(--main-color); 
+    flex-wrap: wrap;
+    padding: 70px 290px;
+    justify-content: center;
+    text-align:center;
+}
+
+header h1 {
+    
+    margin-top: 10px;
+    
+}
+
+header span {
+    font-size: 2em;
+    
+    
+}
+
+ p {
+    color: var(--text-color);
+    margin: 0;
+    line-height:25px;
+    
+}
+
+section {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 250px 250px;
+    gap: 30px;
+    justify-content: center;
+}
+
+h3 {
+    color: var(--main-color);
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: solid 5px;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position-x: 250px;
+    background-position-y: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 20px;
+    
+}
+
+#supervisor {
+    border-color:aqua;
+    background-image: url(images/icon-supervisor.svg);
+    grid-row: span 2;
+    align-self: center;
+}
+
+#team-builder {
+    border-color:red;
+    background-image: url(images/icon-team-builder.svg);
+    
+}
+
+#karma {
+    border-color:orange;
+    background-image: url(images/icon-karma.svg);
+    grid-area: 2 / 2 / 3 / 3;
+    
+}
+
+#calculator {
+    border-color:rgb(0, 174, 255);
+    background-image: url(images/icon-calculator.svg);
+    grid-row: span 2;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

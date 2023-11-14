@@ -113,22 +113,127 @@ h3 {
 }
 
 
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
 
+    @media (max-width: 375px) {
 
+        
+@font-face {
+    font-family: Poppins;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+}
 
+:root {
+    
+    --text-color: hsl(229, 6%, 66%);
+    --main-color:   hsl(234, 12%, 34%);
+    --main-bg-color:hsl(0, 0%, 98%);
+}
 
+body {
+    margin: 0 ;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: grey;
+    
+   
+}
 
+.container {
+    margin: 0;
+    width: auto;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
 
+header {
+    display: flex;
+    color: var(--main-color); 
+    flex-wrap: wrap;
+    padding: 40px 45px;
+    justify-content: center;
+    text-align:center;
+}
 
+header h1 {
+    
+    margin-top: 10px;
+    font-size: 1.5em;
+}
 
+header span {
+    font-size: 1.5em;
+    
+    
+}
 
+ p {
+    color: var(--text-color);
+    margin: 0;
+    line-height:25px;
+    
+}
 
+section {
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 20px 0;
+    justify-content: center;
+    padding: 0 20px;
+}
 
+h3 {
+    color: var(--main-color);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 
+.card {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: solid 5px;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position-x: 200px;
+    background-position-y: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 20px;
+    
+}
 
+#supervisor {
+    border-color:aqua;
+    background-image: url(images/icon-supervisor.svg);
+    grid-row: 1;
+    align-self: unset;
+}
 
+#team-builder {
+    border-color:red;
+    background-image: url(images/icon-team-builder.svg);
+    grid-row: 2;
+}
 
+#karma {
+    border-color:orange;
+    background-image: url(images/icon-karma.svg);
+    grid-row: 3;
+ 
+}
+
+#calculator {
+    border-color:rgb(0, 174, 255);
+    background-image: url(images/icon-calculator.svg);
+    grid-row: 4;
+    align-self: unset;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    }
